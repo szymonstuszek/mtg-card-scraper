@@ -5,6 +5,13 @@
 -- PostgreSQL DML Statements (INSERT)
 -- ============================================
 
+-- cleanup before insert
+TRUNCATE TABLE game_results, game_matches, games,
+               deck_cards, decks, collections,
+               card_prices, cards,
+               player_profile, players
+RESTART IDENTITY CASCADE;
+
 -- ============================================
 -- PLAYERS DATA
 -- ============================================
@@ -893,7 +900,7 @@ VALUES
 (3, 'b475b071-5545-483e-a397-89451f258602', 1),
 (3, 'c74d4a57-0f66-4965-9ed7-f88a08aa1d15', 2),
 (3, '276f5cee-a501-4658-bd4d-7a044bf1ccbc', 1),
-(3, '2e97e99a-3432-4e86-bb99-e3bfdd5f6285', 4),
+(3, '73a065e3-b530-4e62-ab3c-4f6f908184ec', 4),
 
 -- Diana's collection
 (4, '8100bceb-ffba-487a-bb45-4fe2a156a8dc', 30),
